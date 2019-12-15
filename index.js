@@ -37,9 +37,11 @@ class ViewContainer extends Renderer {
   }
 
   async fetch(url, fetchParams) {
-    fetchParams.body = JSON.stringify(fetchParams.body);
+    if (fetchParams) {
+      fetchParams.body = JSON.stringify(fetchParams.body);
+    }
 
-    const res = await fetch(`${PATH}${url}`, fetchParams);
+    const res = await fetch(`${PATH}${url}`, fetchParams || null);
     const text = res ? await res.text() : '';
     const isValid = res.ok && text.length > 0;
 
