@@ -1,0 +1,93 @@
+::-webkit-scrollbar {
+  max-width: .25rem;
+  max-height: .25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
+
+html {
+  font-size: 12pt;
+  line-height: 1.66;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-size: 17.5px;
+  color: #111;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-kerning: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+button.no-appearance:hover {
+  text-decoration: underline;
+}
+
+.no-appearance,
+button.no-appearance {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.active,
+button.active:hover {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.success {
+  color: green;
+}
+
+.urgent {
+  color: red;
+}
+
+#todos input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
