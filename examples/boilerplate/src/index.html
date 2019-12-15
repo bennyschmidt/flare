@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="./css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <title>Flare</title>
+  </head>
+  <body>
+    <!--
+      Flare (0.0.2)
+      Front-end Boilerplate
+    -->
+
+    <!-- STATIC UI HERE -->
+    <h1>Flare</h1>
+    <div>Use this boilerplate and file structure to set up a new app.</div>
+    <div id="AppRoot"></div><!-- DEFAULT IS <body> IF NO ROOT ELEMENT -->
+
+    <!-- INCLUDE APP CONSTANTS (& OTHER CONFIG) -->
+    <script src="./js/Constants.js"></script>
+    <!-- <script src="./js/Analytics.js"></script> -->
+
+    <!-- INCLUDE FLARE -->
+    <script src="../../../index.js"></script><!-- <script src="./path/to/flare.js"></script> -->
+
+    <!-- INCLUDE VIEWS -->
+    <script src="./js/View/Main.js"></script>
+    <!-- <script src="./js/View/Header.js"></script> -->
+    <!-- <script src="./js/View/Footer.js"></script> -->
+
+    <!-- INCLUDE AppViewContainer -->
+    <script src="./js/AppViewContainer.js"></script>
+    <script defer>new AppViewContainer</script>
+
+    <!-- RUN UI TESTS (OPTIONAL) -->
+    <!-- <script defer src="../test.js"></script> -->
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "flare-example-boilerplate",
+  "author": "@exactchange",
+  "description": "A boilerplate Flare front-end",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {}
+}
