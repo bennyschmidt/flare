@@ -4,6 +4,11 @@
  */
 
 const HomePage = state => {
+
+  /*
+   * Events
+   */
+
   events.addTodo = title => {
     state.todos.push({
       isCompleted: false,
@@ -39,6 +44,10 @@ const HomePage = state => {
       todos: state.todos
     });
   };
+
+  /*
+   * Markup
+   */
 
   return `
     <section id="HomePage">
