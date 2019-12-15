@@ -1,7 +1,13 @@
 /*
  * Flare
- * 0.0.2
+ * 0.0.3
  */
+
+/*
+ * Events
+ */
+
+window.events = {};
 
 /*
  * Renderer
@@ -82,9 +88,3 @@ class ViewContainer extends Renderer {
     return this.state;
   }
 }
-
-/*
- * Event handler lookup
- */
-
-window.events = {};

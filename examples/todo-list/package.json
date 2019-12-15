@@ -2,7 +2,7 @@
   "name": "flare-example-todo-list",
   "author": "@exactchange",
   "description": "A todo list example with Flare",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "test": "node test"
   },

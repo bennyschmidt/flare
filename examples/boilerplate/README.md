@@ -1,3 +1,1 @@
-Run tests
-
-`npm test`
+Boilerplate Example
