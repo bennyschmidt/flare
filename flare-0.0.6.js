@@ -1,6 +1,6 @@
 /*
  * Flare
- * 0.0.5
+ * 0.0.6
  */
 
 /*
@@ -33,13 +33,20 @@ class Renderer {
 
 class ViewContainer extends Renderer {
   constructor(element) {
+    const { hash } = window.location;
+
     super(element || document.querySelector('body'));
 
     window.navigate = this.navigate.bind(this);
     window.setState = this.setState.bind(this);
 
-    this.state = {};
+    this.state = {
+      route: hash ? hash.replace(/#/gi, '') : 'home'
+    };
+
     this.views = [];
+
+    this.navigate(`/${this.state.route}`);
   }
 
   async fetch(url, fetchParams) {

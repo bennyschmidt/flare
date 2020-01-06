@@ -1,4 +1,4 @@
-# Flare [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/exactchange/flare/blob/master/LICENSE) [![npm version](https://img.shields.io/badge/npm-v0.0.5-brightgreen)](https://www.npmjs.com/package/flare-frontend)
+# Flare [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/exactchange/flare/blob/master/LICENSE) [![npm version](https://img.shields.io/badge/npm-v0.0.6-brightgreen)](https://www.npmjs.com/package/flare-frontend)
 
 Flare is a library for front-end JavaScript, currently in development. Stay tuned for docs and usage.
 
