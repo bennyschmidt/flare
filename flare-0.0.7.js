@@ -1,6 +1,6 @@
 /*
  * Flare
- * 0.0.6
+ * 0.0.7
  */
 
 /*
@@ -32,7 +32,7 @@ class Renderer {
  */
 
 class ViewContainer extends Renderer {
-  constructor(element) {
+  constructor(element, rootPath) {
     const { hash } = window.location;
 
     super(element || document.querySelector('body'));
@@ -41,7 +41,7 @@ class ViewContainer extends Renderer {
     window.setState = this.setState.bind(this);
 
     this.state = {
-      route: hash ? hash.replace(/#/gi, '') : 'home'
+      route: hash ? hash.replace(/#/gi, '') : rootPath
     };
 
     this.views = [];

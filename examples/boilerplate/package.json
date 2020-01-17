@@ -2,7 +2,7 @@
   "name": "flare-example-boilerplate",
   "author": "@exactchange",
   "description": "A boilerplate front-end using Flare",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "test": "node test"
   },
