@@ -1,6 +1,6 @@
 /*
  * Flare
- * 0.0.7
+ * 0.0.8
  */
 
 /*
@@ -37,6 +37,7 @@ class ViewContainer extends Renderer {
 
     super(element || document.querySelector('body'));
 
+    window.get = this.fetch.bind(this);
     window.navigate = this.navigate.bind(this);
     window.setState = this.setState.bind(this);
 
@@ -50,11 +51,12 @@ class ViewContainer extends Renderer {
   }
 
   async fetch(url, fetchParams) {
-    if (fetchParams) {
+    if (fetchParams && typeof(fetchParams) === 'object') {
       fetchParams.body = JSON.stringify(fetchParams.body);
     }
 
     const res = await fetch(`${PATH}${url}`, fetchParams || null);
+
     const text = res ? await res.text() : '';
     const isValid = res.ok && text.length > 0;
 
